@@ -22,9 +22,9 @@
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
-
+/*displays it as a flex box , makes it a row and wrap, and changes the growth and shrink rate*/
 body{
-   display: -webkit-box;
+   display: -webkit-flex-box;
    display: flex;
    -webkit-flex-flow: row wrap;
    flex-flow: row wrap;
@@ -45,7 +45,7 @@ article{
 	Mobile Devices: 0 - 480 pixels
    ============================================
 */
-
+/*for mobile devices the images take up the whole page, makes the nav second to last, and the footer last*/
 @media only screen and (max-width: 480px){
    img.panel{
       width: 100%;
@@ -68,10 +68,11 @@ article{
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
-
+/*for tablets and computers the nav turns into rows with nowrap, the flex growth and shrink rate 
+change and sets the widths of the images*/
 @media only screen and (min-width: 480px){
    nav.horizontal ul{
-      display: -webkit-box;
+      display: -webkit-flex-box;
       display: flex;
       -webkit-flex-flow: row nowrap;
       flex-flow: row nowrap;
@@ -82,16 +83,16 @@ article{
       flex: 1 1 auto;
    }
 
-   img.panelsize1{
+   img.size1{
       width: 100%;
    }
-   img.panelsize2{
+   img.size2{
       width: 60%;
    }
-   img.panelsize3{
+   img.size3{
       width: 40%;
    }
-   img.panelsize4{
+   img.size4{
       width: 30%;
    }
 }
