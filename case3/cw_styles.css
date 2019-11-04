@@ -29,8 +29,8 @@ nav#bottom{
 }
 
 nav#bottom ul{
-   flex-grow: 150px;
-   flex-shrink: 150px;
+   -webkit-flex: 0 1 150px;
+   flex: 0 1 150px;
 }
 
 /* ===============================
@@ -132,13 +132,14 @@ nav#bottom ul{
    
    article{
       -webkit-flex: 2 1 400px;
-      flex: 1 2 200px;
+      flex: 2 1 400px;
    }
 
-   nav#top {
-      -webkit-flex-flow: row nowrap;
-      flex-flow: row nowrap;      
+   aside{
+      -webkit-flex: 1 2 200px;
+      flex: 1 2 200px;
    }
+  
 
    nav#top ul{
       display: -webkit-flex-box;
@@ -149,7 +150,7 @@ nav#bottom ul{
       align-items: center;
    }
 
-   nav#top ul li{
+   nav#top li{
       max-width: 80px;
       flex: 1 1 80px;
    }
